@@ -63,9 +63,6 @@ Multiple system compromise originating from spearphishing emails containing weap
 | `00f80f2538dcb54e7adc715c0e7091ec` | NTLM Hash | Extracted hash for Domain `administrator` |
 
 
-> **TL;DR:** Phishing -> Malicious ISO/LNK execution -> Process Injection & Persistence -> Credential Dumping (Mimikatz) -> Lateral Movement -> Domain Controller / DCSync Risk. Immediate containment and active response required.
-
-
 ### Process Tree / Execution Lineage
 ```text
 [mshta.exe] (PID: 6392)
