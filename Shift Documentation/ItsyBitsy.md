@@ -10,7 +10,7 @@
 
 * **Assigned SOC Analyst:** Z.Shamim (L1)
 
-* **Analyst Comment**
+* **Analyst Comment:**
 Analysis of Elastic Stack (Kibana) telemetry identified a successful compromise of a host originating from access to a malicious domain `phpmyadmin.phptestweb[.]com`. The threat actor leveraged this initial connection to download and execute a malicious payload (`hxxp://pastebin[.]com/raw/kd3729`), resulting in an outbound HTTP C2 beacon to an external malicious IP (`104[.]23[.]99[.]190`). Outbound C2 communication was successfully identified and isolated before lateral movement occurred.
 
 
