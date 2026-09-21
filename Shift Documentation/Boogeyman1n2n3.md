@@ -10,10 +10,10 @@
 
 * **Assigned Soc Analyst:** Z.Shamim (L1)
 
-* **Analyst Comment**
+* **Analyst Comment:**
 Multiple system compromise originating from spearphishing emails containing weaponized ZIP attachments. Initial access led to payload delivery via Living Off the Land (mshta.exe, rundll32.exe, powershell.exe), persistence established via scheduled tasks, UAC bypass using fodhelper.exe, and local credential harvesting from a renamed database tool (sq3.exe) and Mimikatz. The attacker moved laterally using harvested domain admin credentials to target WKSTN-1327 and attempt DCSync actions on the primary Domain Controller.
 
-# [Technical Analysis]
+# [TECHNICAL ANALYSIS]
 
 * **Target / Affected Asset(s):** 
   - Hostnames: `WKSTN-JULIANNE` (Finance), `HR-SPECIALIST-01`, `WKSTN-1327` (Exec/Admin), `DC-01` (Domain Controller)
@@ -77,6 +77,7 @@ C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat
                     ├── Network Connection -> 165.232.170[.]151:80 (Sysmon Event ID 3)
                     └── [fodhelper.exe] (UAC Bypass Execution)
 ```
+
 
 **TL;DR:** Phishing -> Malicious ISO/LNK execution -> Process Injection & Persistence -> Credential Dumping (Mimikatz) -> Lateral Movement -> Domain Controller / DCSync Risk.
 
