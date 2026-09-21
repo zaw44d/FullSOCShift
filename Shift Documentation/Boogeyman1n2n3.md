@@ -42,13 +42,13 @@ Multiple system compromise originating from spearphishing emails containing weap
 ## Indicators of Compromise (IOCs)
 
 ### Network Indicators
-| Indicator | Type | Details | Defanged |
+| Indicator | Type | Details |
 | :--- | :--- | :--- | :--- |
-| `15.235.99[.]80` | IPv4 | Phishing Originating Mail MTA Server | Yes |
-| `165.232.170[.]151` | IPv4 | Primary Command & Control (C2) Server (Port 80) | Yes |
-| `agriffin@bpakcaging[.]xyz` | Email | Sender address (Typosquatted domain) | Yes |
-| `files.bpakcaging[.]xyz` | Domain | Payload Staging / Hosting Domain | Yes |
-| `cdn.bpakcaging[.]xyz` | Domain | DNS Tunneling Exfiltration Endpoint | Yes |
+| `15.235.99[.]80` | IPv4 | Phishing Originating Mail MTA Server |
+| `165.232.170[.]151` | IPv4 | Primary Command & Control (C2) Server (Port 80) |
+| `agriffin@bpakcaging[.]xyz` | Email | Sender address (Typosquatted domain) |
+| `files.bpakcaging[.]xyz` | Domain | Payload Staging / Hosting Domain |
+| `cdn.bpakcaging[.]xyz` | Domain | DNS Tunneling Exfiltration Endpoint |
 
 ### System Indicators
 | Indicator | Type | Details |
@@ -70,7 +70,8 @@ Multiple system compromise originating from spearphishing emails containing weap
 ```text
 [mshta.exe] (PID: 6392)
   └── [cmd.exe]
-        ├── [xcopy.exe] /s /i /e /h D:\review.dat C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat
+        ├── [xcopy.exe]
+C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat
         └── [powershell.exe] -> Created Scheduled Task 'Review'
               └── [rundll32.exe] "C:\Users\EVAN~1.HUT\AppData\Local\Temp\review.dat",DllRegisterServer
                     ├── Network Connection -> 165.232.170[.]151:80 (Sysmon Event ID 3)
