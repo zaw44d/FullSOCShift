@@ -1,6 +1,6 @@
 # [INCIDENT REPORT]
 
-* **Ticket ID:** INC-2023-BOOG
+* **Ticket ID:** INC-2023-BGY
 
 * **Incident Status:** Unresolved
 
