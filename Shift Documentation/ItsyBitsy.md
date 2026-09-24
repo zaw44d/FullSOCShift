@@ -1,6 +1,6 @@
 # [INCIDENT REPORT]
 
-* **Ticket ID:** INC2023-ITSY-BITSY
+* **Ticket ID:** INC-2023-TSY
 
 * **Incident Status:** Resolved
 
