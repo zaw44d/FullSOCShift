@@ -52,7 +52,7 @@ Multiple system compromise originating from spearphishing emails containing weap
 
 ### System Indicators
 | Indicator | Type | Details |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `Invoice_20230103.lnk` | Shortcut File | Contained base64 PowerShell download cradle |
 | `ProjectFinancialSummary_Q3.pdf` | Malicious ISO / File | Initial Stager trigger for `mshta.exe` |
 | `IT_Automation.ps1` | Script | Discovered script used by attacker for privilege enumeration |
