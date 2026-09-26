@@ -54,7 +54,7 @@ process.name: ("curl" OR "wget" OR "bash") AND process.args: "*pastebin.com*"
 
 ### Network Indicators
 | Indicator | Type | Details |
-| :--- | :--- | :--- | :--- |
+|---|---|---|
 | `104[.]23[.]99[.]190` | IPv4 | Command & Control (C2) Server IP |
 | `phpmyadmin.phptestweb[.]com` | Domain | Phishing / Malicious Initial Entry Domain |
 | `hxxps://pastebin[.]com/raw/kd3729` | URL | Staging URL for secondary malicious payload |
